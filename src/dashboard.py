@@ -23,7 +23,7 @@ elif option == 'Memorable Password':
 else:
     length = st.slider("Length", min_value=2, max_value=10, value=4)
 
-    generator = PinCodeGenerator(length)
+    generator = PinGenerator(length)
 
 password = generator.generate()
 st.write("Your password is:")
